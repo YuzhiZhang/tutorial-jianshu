@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn2.jianshu.io', "upload-images.jianshu.io"],
+    domains: [
+      'cdn2.jianshu.io',
+      'upload-images.jianshu.io',
+      'upload.jianshu.io',
+    ],
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -14,7 +18,7 @@ const nextConfig = {
     )
 
     return config
-  }
+  },
 }
 
 module.exports = nextConfig
