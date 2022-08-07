@@ -8,35 +8,65 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+# or
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+This project is a fullstack application, powered by Next.js, it is a flexible React framework that gives us building blocks to create fast web applications.
+Why i choose it?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+* User Interface  - React is a JavaScript library for building interactive user interfaces.By library, we mean React provides helpful functions to build UI,
+but leaves it up to the developer where to use those functions in their application.
+* Routing - Next.js has a file-system based router built on the concept of pages. the files inside the pages directory can be used to define most common patterns.
+* Data Fetching - Data fetching in Next.js allows you to render your content in different ways, depending on your application's use case.
+These include pre-rendering with Server-side Rendering or Static Generation, and updating or creating content at runtime with Incremental Static Regeneration.
+* Rendering - render static or dynamic content, nice SEO.
+* Performance -  The Next.js Compiler, written in Rust using SWC, allows Next.js to transform and minify your JavaScript code for production.
+This replaces Babel for individual files and Terser for minifying output bundles. Compilation using the Next.js Compiler is 17x faster than Babel and enabled by default since Next.js version 12.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Project 
+root
+```
+|-- components
+|-- hooks
+|-- libs
+|-- pages
+    |-- api         
+    |-- posts
+|-- public
+|-- scripts
+```
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+- Install Docker on your machine.
+- Build your container:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker build -t nextjs-jianshu-docker .
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Run your container:
 
-## Deploy on Vercel
+```bash
+# By using an environment variable, you will set the connection string to a different value depending on where you are running this container.
+# mongodb host need instead by your ip
+docker run -p 3000:3000 -e MONGODB_CONN_STRING=mongodb://192.168.31.182:27017  -e MONGODB_DB_NAME=jianshu -e MONGODB_POST_COLLECTION_NAME=posts -e MONGODB_USER_COLLECTION_NAME=users  nextjs-jianshu-docker
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## MongoDB Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-## Setup MongoDB
 ```bash
 docker run --name mongodb -d -p 27017:27017 -v ~/mongo/data/configdb:/data/configdb -v ~/mongo/data/db:/data/db mongo
 
 ```
-mongo 
+
+## Prepare Data
+copy the links to browser, and call the api, waiting for the app to import data to db
+```
+http://127.0.0.1:3000/api/posts/init
+http://127.0.0.1:3000/api/users/init
+```
+
