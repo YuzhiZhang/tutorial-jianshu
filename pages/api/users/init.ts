@@ -18,7 +18,7 @@ export default async function handler(
     console.log('User data insert success')
     res.status(200).json({ success: true })
   } catch (e) {
-    console.log('User data insert success' + '\n')
+    console.log('User data insert failed' + '\n')
     console.log(e)
     res.status(200).json({ success: false })
   }
