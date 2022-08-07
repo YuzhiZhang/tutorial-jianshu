@@ -59,6 +59,7 @@ docker run -p 3000:3000 -e MONGODB_CONN_STRING=mongodb://192.168.31.182:27017  -
 ## MongoDB Setup
 
 ```bash
+docker pull mongo:latest
 docker run --name mongodb -d -p 27017:27017 -v ~/mongo/data/configdb:/data/configdb -v ~/mongo/data/db:/data/db mongo
 
 ```
