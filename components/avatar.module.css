@@ -1,0 +1,8 @@
+.avatar {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
