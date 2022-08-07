@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "init:db": "tsx scripts/init.ts"
+    "crawl:posts": "tsx scripts/crawlPosts.ts"
   },
   "dependencies": {
     "classnames": "^2.3.1",
