@@ -201,3 +201,79 @@ export const users = [
     is_following_user: false,
   },
 ]
+
+export const posts = [
+  {
+    "title": "野花芬芳（118）",
+    "profile_link": "/p/b58513ad9dc9",
+    "id": "b58513ad9dc9",
+    "img_source": "https://upload-images.jianshu.io/upload_images/15992237-4637829443e3d5c3.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+    "abstract": "\n      白屈菜的药用价值非常不错，但却是“反面”的药用价值，因为它具备了一定的毒性，所以专业人士就会从它的植株之中，提炼出一些它独有的微量元素，用来制作...\n    ",
+    "diamond_count": "\n           48.1\n        ",
+    "nickname": "焦小桥",
+    "comment_count": "\n           24\n",
+    "like_count": " 189"
+  },
+  {
+    "title": "2022-07-09",
+    "profile_link": "/p/d3b7a837f4a8",
+    "id": "d3b7a837f4a8",
+    "img_source": "https://upload-images.jianshu.io/upload_images/20122482-83ac5458eb2b61ef.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+    "abstract": "\n      刚刚打开简书准备更文，点开评论，发现有人骂我，老子果断的骂回去，什么玩意儿，反正我现在就是谁骂我我就骂谁，说不定当面打架，老子还给你干一架，打赢...\n    ",
+    "diamond_count": "\n           40.8\n        ",
+    "nickname": "小灵芝阿尘",
+    "comment_count": "\n           31\n",
+    "like_count": " 184"
+  },
+  {
+    "title": "笑话一则",
+    "profile_link": "/p/98c352a3e284",
+    "id": "98c352a3e284",
+    "abstract": "\n      从前有一个人，超级爱占小便宜。有一次它到城里去赶集，发现有人卖一种叫做油条的东西。他也不知道这个油条是两根压在一起炸的，于是就闹出了一个不小的笑...\n    ",
+    "diamond_count": "\n           60.2\n        ",
+    "nickname": "小苹果2010",
+    "comment_count": "\n           28\n",
+    "like_count": " 5"
+  },
+  {
+    "title": "全家人傍晚散步",
+    "profile_link": "/p/f62e50892684",
+    "id": "f62e50892684",
+    "img_source": "https://upload-images.jianshu.io/upload_images/14149621-3b9b8335fdf61485.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+    "abstract": "\n      今日下午，全家人到我们小区附近的自助火锅店去吃火锅。吃自助火锅，容易吃多，吃完饭一家人沿着一江两岸散步。 此时太阳正要落山，万道金光穿透云层，给...\n    ",
+    "diamond_count": "\n           51.7\n        ",
+    "nickname": "王磊老师",
+    "comment_count": "\n           52\n",
+    "like_count": " 279"
+  },
+  {
+    "title": "37岁女博士带着5个月女儿从27楼跳下去",
+    "profile_link": "/p/c346ded14236",
+    "id": "c346ded14236",
+    "abstract": "\n      长沙某小区内，37岁女博士苏女士，带着5个月女儿，从27楼跳下……当场身亡。 据亲友介绍，苏女士和丈夫李强，都是博士，两个人已经有了一个7岁的孩...\n    ",
+    "diamond_count": "\n           59.6\n        ",
+    "nickname": "红尘禅语",
+    "comment_count": "\n           158\n",
+    "like_count": " 444"
+  },
+  {
+    "title": "生活优越的人，怎么会跳楼自杀？",
+    "profile_link": "/p/f91c6509326d",
+    "id": "f91c6509326d",
+    "abstract": "\n      单位同事跳楼自杀了，大家听到这个消息无比震惊。怎么可能呢? 同事家境好，妻子做生意，漂亮的女儿大学毕业后嫁入豪门，可以说生活无忧无虑。 他性格随...\n    ",
+    "diamond_count": "\n           63.7\n        ",
+    "nickname": "若涵_a",
+    "comment_count": "\n           287\n",
+    "like_count": " 525"
+  },
+  {
+    "title": "单身久了，真的很可怕",
+    "profile_link": "/p/b82a84974302",
+    "id": "b82a84974302",
+    "abstract": "\n      人跟人，总是很不一样。 有的人才二十出头，就已经告别了单身，走进了婚姻，有的人在二十岁以后，虽然也会单身一段时间，但是很快就进入了一段恋情。 也...\n    ",
+    "diamond_count": "\n           35.5\n        ",
+    "nickname": "南方姑娘谭檬",
+    "comment_count": "\n           60\n",
+    "like_count": " 6"
+  }
+]
