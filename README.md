@@ -66,7 +66,7 @@ docker run --name mongodb -d -p 27017:27017 -v ~/mongo/data/configdb:/data/confi
 ## Prepare Data
 copy the links to browser, and call the api, waiting for the app to import data to db
 ```
-http://127.0.0.1:3000/api/posts/init
+http://127.0.0.1:3000/api/post/init
 http://127.0.0.1:3000/api/users/init
 ```
 
